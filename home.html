@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Todo Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <span id="welcome"></span>
+      <button id="toggleLang" class="small">ع/EN</button>
+    </div>
+    <div>
+      <button id="logoutBtn" class="small" data-i18n="logout">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="todo-card card">
+      <h2 data-i18n="your_todos">Your Todos</h2>
+      <form id="todoForm">
+        <input id="taskInput" placeholder="" />
+        <button type="submit" class="btn" data-i18n="add">Add</button>
+      </form>
+      <ul id="todoList" class="todo-list"></ul>
+    </section>
+  </main>
+
+<script src="./scripts/i18n.js"></script>
+<script src="./scripts/todo.js"></script>
+<script src="./scripts/auth.js"></script>
+</body>
+</html>
